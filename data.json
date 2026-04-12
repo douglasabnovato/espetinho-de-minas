@@ -1,0 +1,106 @@
+{
+  "empresa": {
+    "nome": "Espetinho de Minas",
+    "faq": {
+      "cartao": "Aceitamos cartões de crédito e débito. Há um acréscimo de R$ 0,25 por item no cartão conforme o banner. Pix é o valor original!",
+      "eventos": "Sim! O Neto leva toda a estrutura de churrasco para sua festa em Juiz de Fora. Chame no WhatsApp!"
+    }
+  },
+  "promocoes": [
+    {
+      "titulo": "Combo Especial",
+      "descricao": "3 Espetinhos (Linguiça, Frango, Lombo ou Misto) por apenas R$ 20,00",
+      "preco": 20.0
+    }
+  ],
+  "cardapio": [
+    {
+      "id": 1,
+      "nome": "Espetinho de Lombo",
+      "categoria": "classicos",
+      "preco": 8.0,
+      "descricao": "Lombo suíno marinado com tempero mineiro tradicional.",
+      "imagem": "./assets/espetinhos/espetilho.jpg"
+    },
+    {
+      "id": 2,
+      "nome": "Espetinho de Frango",
+      "categoria": "classicos",
+      "preco": 8.0,
+      "descricao": "Peito de frango macio e suculento assado na brasa.",
+      "imagem": "./assets/espetinhos/espetilho.jpg"
+    },
+    {
+      "id": 3,
+      "nome": "Espetinho Coração",
+      "categoria": "classicos",
+      "preco": 9.0,
+      "descricao": "Coração de frango temperado, um clássico do churrasco.",
+      "imagem": "./assets/espetinhos/espetilho.jpg"
+    },
+    {
+      "id": 4,
+      "nome": "Espetinho Misto",
+      "categoria": "classicos",
+      "preco": 8.0,
+      "descricao": "A combinação perfeita de carnes no mesmo espeto.",
+      "imagem": "./assets/espetinhos/espetilho.jpg"
+    },
+    {
+      "id": 5,
+      "nome": "Medalhão de Frango",
+      "categoria": "premium",
+      "preco": 10.0,
+      "descricao": "Frango envolto em uma fatia generosa de bacon crocante.",
+      "imagem": "./assets/espetinhos/espetilho.jpg"
+    },
+    {
+      "id": 6,
+      "nome": "Medalhão de Lombo",
+      "categoria": "premium",
+      "preco": 10.0,
+      "descricao": "Lombo suíno premium com bacon assado na hora.",
+      "imagem": "./assets/espetinhos/espetilho.jpg"
+    },
+    {
+      "id": 7,
+      "nome": "Contra-Filé",
+      "categoria": "premium",
+      "preco": 12.0,
+      "descricao": "Corte de contra-filé selecionado, maciez garantida.",
+      "imagem": "./assets/espetinhos/espetilho.jpg"
+    },
+    {
+      "id": 8,
+      "nome": "Contra-Filé c/ Queijo",
+      "categoria": "premium",
+      "preco": 12.0,
+      "descricao": "Nosso campeão de vendas: carne premium com queijo derretido.",
+      "imagem": "./assets/espetinhos/espetilho.jpg"
+    },
+    {
+      "id": 9,
+      "nome": "Queijo Coalho",
+      "categoria": "classicos",
+      "preco": 8.0,
+      "descricao": "Queijo coalho de qualidade com crosta dourada.",
+      "imagem": "./assets/espetinhos/espetilho.jpg"
+    },
+    {
+      "id": 10,
+      "nome": "Refri Lata",
+      "categoria": "bebidas",
+      "preco": 6.0,
+      "descricao": "Lata 350ml (Coca-Cola, Guaraná e mais).",
+      "imagem": "./assets/espetinhos/espetilho.jpg"
+    },
+    {
+      "id": 11,
+      "nome": "Suco de Laranja",
+      "categoria": "bebidas",
+      "preco": 8.0,
+      "descricao": "Suco natural, gelado e refrescante.",
+      "imagem": "./assets/espetinhos/espetilho.jpg"
+    }
+  ]
+}

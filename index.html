@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espetinho de Minas | Food Truck | JF</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./public/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./public/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./public/favicon-16x16.png">
+<link rel="manifest" href="./public/site.webmanifest">
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <header class="main-header">
+    <div class="container">
+        <div class="header-left">
+            <div class="logo-wrapper">
+                <img src="./assets/food-truck-espetinho-de-minas-4.png" style="height: 50px; width: auto;">
+                <div class="logo">Espetinho <span>de Minas</span></div>
+            </div>
+        </div>
+
+        <nav class="nav-links-desktop">
+            <div class="nav-menu">
+                <a href="#catalogo">Cardápio</a>
+                <a href="#sobre">Sobre</a>
+            </div>
+            <a href="https://wa.me/5532999999999" class="btn-header">Pedir Agora</a>
+        </nav>
+    </div>
+</header>
+
+    <main>        
+        <section class="hero-v2">
+    <div class="smoke-particles" id="smoke"></div>
+    
+    <div class="container hero-grid">
+        <div class="hero-text">
+            <div class="badge-status-container">
+                <span class="badge-status">● Aberto agora em Juiz de Fora</span>
+            </div>
+            
+            <h1>A brasa está acesa.<br> O sabor autêntico de <span>Minas te espera.</span></h1>
+            
+            <p class="hero-description">
+                Carnes bovinas premium selecionadas a dedo, tempero artesanal de família e aquele toque defumado irresistível. Você merece esse sabor.
+            </p>
+            
+            <div class="hero-actions">
+                <a href="#catalogo" class="btn-lg btn-primary pulse-effect">Ver Cardápio Completo</a>
+                <a href="https://wa.me/5532999999999" target="_blank" class="btn-lg btn-success">
+                    Pedir no WhatsApp <span class="wa-icon">→</span>
+                </a>
+            </div>
+        </div>
+        
+        <div class="hero-image-container">
+            <div class="glow-effect"></div>
+            
+            <div class="img-wrapper">
+                <img src="./assets/espetinhos/espetilho.jpg" alt="Espetinho Premium na Brasa" class="floating-img">
+                <div class="img-shadow"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <section class="features-v2">
+    <div class="container">
+        <div class="features-grid">
+            <div class="f-item">
+                <div class="f-icon">📍</div>
+                <div class="f-info">
+                    <span class="f-title">Juiz de Fora</span>
+                    <span class="f-subtitle">Entrega rápida na região</span>
+                </div>
+            </div>
+
+            <div class="f-item">
+                <div class="f-icon">🔥</div>
+                <div class="f-info">
+                    <span class="f-title">Brasa Viva</span>
+                    <span class="f-subtitle">Defumação artesanal</span>
+                </div>
+            </div>
+
+            <div class="f-item">
+                <div class="f-icon">🥩</div>
+                <div class="f-info">
+                    <span class="f-title">Cortes Premium</span>
+                    <span class="f-subtitle">Qualidade selecionada</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        <section id="catalogo" class="catalog-v2">
+            <div class="container">
+                <h2 class="section-title">Nossas Delícias</h2>
+                
+                <nav class="category-tabs">
+                    <button class="tab-btn active" onclick="filterMenu('todos')">Todos</button>
+                    <button class="tab-btn" onclick="filterMenu('classicos')">Clássicos</button>
+                    <button class="tab-btn" onclick="filterMenu('premium')">Premium</button>
+                    <button class="tab-btn" onclick="filterMenu('bebidas')">Bebidas</button>
+                </nav>
+
+                <div id="product-grid" class="product-grid"></div>
+                
+                <p class="tax-info container">* Cartão possui taxa de R$ 0,25 por item.</p>
+            </div>
+        </section>
+        </main>
+
+    
+        <footer id="sobre" class="footer-v2">
+            <div class="container">
+                <div class="footer-main">
+                    <div class="footer-col branding">
+                    <div class="footer-logo-group">
+                        <img class="logo-footer" src="./assets/food-truck-espetinho-de-minas-3.png" alt="Food Truck"> 
+                    </div>
+                    
+                    <div class="footer-brand-info">
+                        <h3 class="logo">Espetinho <span>de Minas</span></h3>
+                        <p class="footer-description">
+                            O autêntico churrasco na brasa, levando o sabor da tradição mineira para cada canto de Juiz de Fora.
+                        </p>
+                    </div>
+
+                    <div class="location-tag">
+                        <span class="icon">📍</span>
+                        <div class="location-text">
+                            <strong>Juiz de Fora, MG</strong>
+                            <span>Atendimento em toda a cidade</span>
+                        </div>
+                    </div>
+                </div>
+
+                    <div class="footer-col">
+                        <h4>✨ Nossas Estrelas</h4>
+                        <nav class="footer-nav">
+                            <a href="#catalogo"><span>🥩</span> Carnes Bovina Premium</a>
+                            <a href="#catalogo"><span>🍯</span> Molhos Artesanais</a>
+                            <a href="#catalogo"><span>🔥</span> Combos da Brasa</a>
+                            <a href="#catalogo"><span>🍺</span> Bebidas Geladas</a>
+                        </nav>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>🏢 A Empresa</h4>
+                        <nav class="footer-nav">
+                            <a href="#sobre"><span>📖</span> Nossa História</a>
+                            <a href="#"><span>🚚</span> Onde encontrar o Truck</a>
+                            <a href="#"><span>🔒</span> Privacidade</a>
+                        </nav>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>📱 Social</h4>
+                        <div class="social-links">
+                            <a href="#" class="social-btn"><span>📸</span> Instagram</a>
+                            <a href="#" class="social-btn"><span>💬</span> WhatsApp</a>
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-sub"><span>📧</span> contato@espetinho.com</p>
+                            <p class="contact-sub"><span>📞</span> (32) 9999-9999</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <div class="footer-divider"></div>
+                    <div class="bottom-flex">
+                        <p>© 2026 Espetinho de Minas - Feito com brasa e orgulho em JF</p>
+                        <div class="dev-tag">By <strong>learnTECH</strong></div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    <button id="chat-toggle" class="chat-trigger">
+    <span class="chat-icon">💬</span>
+</button>
+
+<div id="chat-container" class="chat-closed">
+    <div class="chat-header">
+        <div class="header-info">
+            <div class="avatar-status">
+                <img src="./assets/mascote-minasbot.png" alt="Bot" class="bot-avatar">
+                <span class="status-dot">●</span>
+            </div>
+            <div class="header-text">
+                <span class="bot-name">MinasBot 🔥</span>
+                <span class="bot-subtitle">Online agora</span>
+            </div>
+        </div>
+        <button id="close-chat">×</button>
+    </div>
+
+    <div id="chat-msgs">
+        <div class="msg bot-msg">
+            Olá! Como posso ajudar seu churrasco hoje? 🥩
+        </div>
+    </div>
+
+    <div class="chat-input-area">
+        <input type="text" id="user-query" placeholder="Dúvidas? Pergunte...">
+        <button id="send-query">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+        </button>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+    </body>
+</html>
