@@ -647,90 +647,92 @@ body {
    5. FOOTER (DESIGN SYSTEM REFINADO)
    ============================================================ */
 
-   /* ============================================================
+/* ============================================================
    5.1 FOOTER - COLUNA BRANDING (DETALHADO)
    ============================================================ */
 
 .footer-col.branding {
-    display: flex;
-    flex-direction: column;
-    gap: 25px; /* Aumenta o respiro entre os elementos */
+  display: flex;
+  flex-direction: column;
+  gap: 25px; /* Aumenta o respiro entre os elementos */
 }
 
 /* Efeito na Logo/Imagem */
 .logo-footer {
-    width: 100%;
-    max-width: 150px;
-    filter: drop-shadow(0 5px 15px rgba(0,0,0,0.1));
-    transition: all 0.4s ease;
+  width: 100%;
+  max-width: 150px;
+  filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.1));
+  transition: all 0.4s ease;
 }
 
 .logo-footer:hover {
-    transform: scale(1.05) rotate(-2deg);
-    filter: drop-shadow(0 8px 20px rgba(255, 68, 68, 0.2));
+  transform: scale(1.05) rotate(-2deg);
+  filter: drop-shadow(0 8px 20px rgba(255, 68, 68, 0.2));
 }
 
 /* Organização do Texto da Marca */
 .footer-brand-info .logo {
-    display: block;
-    margin-bottom: 10px;
-    font-size: 1.4rem;
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1.4rem;
 }
 
 .footer-description {
-    font-size: 0.95rem;
-    line-height: 1.6;
-    color: #65676b;
-    margin: 0;
-    max-width: 280px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #65676b;
+  margin: 0;
+  max-width: 280px;
 }
 
 /* Card de Localização (Efeito visual de destaque) */
 .location-tag {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    padding: 15px;
-    background: #fdfdfd; /* Fundo quase branco para contraste */
-    border-radius: 12px;
-    border: 1px solid #f0f0f5;
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  background: #fdfdfd; /* Fundo quase branco para contraste */
+  border-radius: 12px;
+  border: 1px solid #f0f0f5;
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .location-tag:hover {
-    border-color: var(--primary);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  border-color: var(--primary);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .location-tag .icon {
-    font-size: 1.4rem;
+  font-size: 1.4rem;
 }
 
 .location-text {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .location-text strong {
-    color: var(--dark);
-    font-size: 0.9rem;
-    font-weight: 700;
+  color: var(--dark);
+  font-size: 0.9rem;
+  font-weight: 700;
 }
 
 .location-text span {
-    color: #a6a8ab;
-    font-size: 0.8rem;
+  color: #a6a8ab;
+  font-size: 0.8rem;
 }
 
 /* Responsividade específica da branding */
 @media (max-width: 576px) {
-    .footer-col.branding {
-        align-items: center;
-        text-align: center;
-    }
-    .footer-description {
-        margin: 0 auto;
-    }
+  .footer-col.branding {
+    align-items: center;
+    text-align: center;
+  }
+  .footer-description {
+    margin: 0 auto;
+  }
 }
 /* Estilos Gerais do Footer */
 .footer-v2 {
@@ -747,9 +749,9 @@ body {
   margin-bottom: 50px;
 }
 
-.logo-footer{
-    width: 100%;
-    max-width: 140px;
+.logo-footer {
+  width: 100%;
+  max-width: 140px;
 }
 
 /* Títulos das Colunas */
@@ -887,117 +889,319 @@ body {
 /* --- FIM FOOTER --- */
 
 /* ============================================================
-   7. CHAT IA - DESIGN SYSTEM REFINADO
+   7. CHAT IA - DESIGN SYSTEM PREMIUM (V2)
    ============================================================ */
 
+/* 7.1 O Botão Fixo (Trigger) */
+/* ============================================================
+   7. CHAT IA - DESIGN SYSTEM PREMIUM (V2)
+   ============================================================ */
+
+/* 7.1 O Botão Fixo (Trigger) com Mascote */
+#chat-toggle {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 70px;
+  height: 70px;
+  background: #e4dfdf; /* Fundo sóbrio para destacar o mascote */ 
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1001;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  overflow: hidden; 
+  border: 1px solid var(--primary, #e30613);
+  box-shadow: 0 8px 25px rgba(227, 6, 19, 0.5);
+}
+
+.mascot-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.mascot-img {
+  width: 110%;
+  height: 110%;
+  object-fit: contain;
+  transition: all 0.3s ease;
+}
+
+/* Ícone que aparece apenas na interação */
+.chat-icon {
+  position: absolute;
+  font-size: 1.6rem;
+  color: white;
+  opacity: 0;
+  transition: all 0.3s ease;
+  transform: scale(0.5) translateY(10px);
+}
+
+/* EFEITO DE INTERAÇÃO (Glow de Brasa) */
+#chat-toggle:hover {
+  background: var(--primary, #e30613); /* Vermelho institucional */
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: 0 8px 25px rgba(227, 6, 19, 0.5);
+}
+
+#chat-toggle:hover .mascot-img {
+  transform: scale(0.7);
+  opacity: 0.2; /* O Queijinho fica "vigilante" ao fundo */
+  filter: grayscale(1) brightness(2); /* Ajuste para melhor contraste no vermelho */
+}
+
+#chat-toggle:hover .chat-icon {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+}
+
+/* Ajuste para dispositivos móveis */
+@media (max-width: 768px) {
+  #chat-toggle {
+    width: 60px;
+    height: 60px;
+    bottom: 15px;
+    right: 15px;
+  }
+}
+
+/* 7.2 Container da Janela do Chat */
+/* Container Principal */
 #chat-container {
-    position: fixed;
-    bottom: 90px;
-    right: 20px;
-    width: 350px;
-    max-height: 500px;
-    background: #ffffff;
-    border-radius: 20px;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15); /* Sombra suave estilo iFood */
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    z-index: 1001;
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: fixed;
+  bottom: 90px;
+  right: 25px;
+  width: 350px;
+  height: 500px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 1000;
+  transition: all 0.3s ease;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
-/* Estado Fechado */
-.chat-closed {
-    opacity: 0;
-    transform: translateY(20px) scale(0.9);
-    pointer-events: none;
+/* Estado padrão: Escondido */
+#chat-container.chat-closed {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(20px) scale(0.8);
 }
 
-/* Header com Avatar */
+/* Estado Ativo: Visível */
+#chat-container.chat-open {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0) scale(1);
+}
+
+/* Header - Corrigindo contraste da image_852f5f.png */
 .chat-header {
-    background: var(--primary); /* Vermelho Espetinho de Minas */
-    padding: 18px 20px;
+  background: #e30613; /* Vermelho Espetinho de Minas */
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
 }
 
 .header-info {
-    display: flex;
-    align-items: center;
-    gap: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar-status {
+  position: relative;
+  width: 45px;
+  height: 45px;
 }
 
 .bot-avatar {
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    background: #fff;
-    padding: 2px;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: white;
+  padding: 2px;
+  object-fit: contain;
+}
+
+.status-dot {
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  color: #4caf50; /* Verde online vibrante */
+  font-size: 12px;
+  background: white;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #e30613;
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
 }
 
 .bot-name {
-    display: block;
-    font-size: 1rem;
-    line-height: 1;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.5px;
 }
 
 .bot-subtitle {
-    font-size: 0.75rem;
-    font-weight: 400;
-    opacity: 0.9;
+  font-size: 12px;
+  opacity: 0.9;
 }
 
-/* Balões de Mensagem (Bubbles) */
+#close-chat {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: white;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+
+#close-chat:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+/* --- conversa do chat --- */
+
 #chat-msgs {
-    flex: 1;
-    padding: 20px;
-    background: #f8f9fa; /* Fundo leve para destacar balões */
-    overflow-y: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+  flex: 1;
+  padding: 24px 16px;
+  overflow-y: auto;
+  background-color: #f0f2f5; /* Um cinza levemente mais azulado para destacar as bolhas brancas */
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  scrollbar-width: thin;
+  scrollbar-color: #ccc transparent;
 }
 
-.msg {
-    max-width: 80%;
-    padding: 12px 16px;
-    border-radius: 15px;
-    font-size: 0.9rem;
-    line-height: 1.4;
-}
-
+/* Estilização da Bolha do Bot */
 .bot-msg {
-    background: #fff;
-    color: var(--dark);
-    border-bottom-left-radius: 2px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+  align-self: flex-start;
+  background: #ffffff;
+  color: #1a1a1a;
+  padding: 12px 16px;
+  border-radius: 18px 18px 18px 4px; /* Ponta arredondada específica para o bot */
+  font-size: 14.5px;
+  line-height: 1.5;
+  max-width: 85%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  position: relative;
+  animation: fadeIn 0.3s ease;
 }
 
-.user-msg {
-    background: var(--primary);
-    color: #fff;
-    align-self: flex-end;
-    border-bottom-right-radius: 2px;
+/* Animação suave ao aparecer */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-/* Área de Input (Refinamento iFood) */
+/* ============================================================
+   ÁREA DE ENTRADA (ESTILO APP PREMIUM)
+   ============================================================ */
+
 .chat-input-area {
-    padding: 15px 20px 20px;
-    background: #fff;
+  padding: 16px 20px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-top: 1px solid #f0f0f5;
+  /* Uma leve sombra interna para dar profundidade à área de digitação */
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.02);
 }
 
 #user-query {
-    border: 1px solid #f0f0f5;
-    background: #f4f4f7; /* Fundo cinza claro estilo busca iFood */
-    transition: all 0.3s ease;
+  flex: 1;
+  background: #f4f4f7; /* Fundo levemente cinza para destacar o campo */
+  border: 1px solid transparent;
+  border-radius: 24px;
+  padding: 12px 20px;
+  font-size: 0.95rem;
+  color: #1a1a1b;
+  outline: none;
+  transition: all 0.3s ease;
 }
 
+/* Efeito de foco: O campo "acende" quando o cliente clica */
 #user-query:focus {
-    background: #fff;
-    border-color: var(--primary);
-    box-shadow: 0 0 0 3px rgba(255, 68, 68, 0.1);
+  background: #ffffff;
+  border-color: var(--primary); /* Vermelho Espetinho de Minas */
+  box-shadow: 0 0 0 4px rgba(227, 6, 19, 0.1);
+}
+
+/* Placeholder mais discreto e elegante */
+#user-query::placeholder {
+  color: #a6a8ab;
+  font-weight: 400;
+}
+
+/* Botão de Enviar (O "Aviãozinho") */
+#send-query {
+  background: var(--primary);
+  color: white;
+  border: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 4px 12px rgba(227, 6, 19, 0.3);
+  flex-shrink: 0; /* Impede o botão de esmagar em telas pequenas */
 }
 
 #send-query svg {
-    width: 18px;
-    height: 18px;
+  width: 20px;
+  height: 20px;
+  /* Ajuste fino: move o ícone levemente para a direita para parecer centralizado opticamente */
+  transform: translateX(1px);
+  stroke: white;
 }
-/* --- FIM CHAT --- */
+
+/* Interações do Botão */
+#send-query:hover {
+  transform: scale(1.1) rotate(-5deg);
+  background: #c20510; /* Um tom de vermelho levemente mais escuro */
+  box-shadow: 0 6px 15px rgba(227, 6, 19, 0.4);
+}
+
+#send-query:active {
+  transform: scale(0.9);
+}
+
+/* --- FIM CHAT IA V2 --- */
