@@ -84,4 +84,12 @@ O design foi concebido para transmitir a hospitalidade mineira com a agilidade d
 ---
 
 > **Status do Projeto**: MVP Finalizado para demonstração técnica. 🚀
+
+---
+
+### 🚀 Próximo Passo
+
+Aperfeiçoar o chat
+Aperfeiçoar o suporte
+
 > Desenvolvido por **Douglas Novato** - Juiz de Fora, MG.
