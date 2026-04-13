@@ -31,7 +31,7 @@ Aqui você pode ver a evolução da interface e o atendimento humanizado:
 
 |                        Header e Status                         |                      Interface de Chat                      |                        Mascote no Botão                        |
 | :------------------------------------------------------------: | :---------------------------------------------------------: | :------------------------------------------------------------: |
-| <img src="./assets/screenshots/status-online.png" width="200"> | <img src="./assets/screenshots/chat-fluxo.png" width="200"> | <img src="./assets/screenshots/botao-mascote.png" width="200"> |
+| <img src="./.github/espetinho-de-minas-1.jpg" width="200"> | <img src="./.github/espetinho-de-minas-3.jpg" width="200"> | <img src="./.github/espetinho-de-minas-4.jpg" width="200"> |
 |                  _Status Online e Identidade_                  |                    _Simulação de Pedido_                    |                    _Interação com Mascote_                     |
 
 ---
